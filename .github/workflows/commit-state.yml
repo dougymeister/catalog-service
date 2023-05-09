@@ -25,7 +25,7 @@ jobs:
           fail-build: false
           severity-cutoff: high
           acs-report-enable: true
-      - name: Upload vulnerability report 
+      - name: Upload vulnerability report
         uses: github/codeql-action/upload-sarif@v2
         if: success() || failure()
         with:
